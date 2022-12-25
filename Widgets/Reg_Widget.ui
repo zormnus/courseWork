@@ -10,16 +10,10 @@
     <x>0</x>
     <y>0</y>
     <width>366</width>
-    <height>359</height>
+    <height>392</height>
    </rect>
   </property>
   <property name="minimumSize">
-   <size>
-    <width>366</width>
-    <height>359</height>
-   </size>
-  </property>
-  <property name="maximumSize">
    <size>
     <width>366</width>
     <height>359</height>
@@ -37,7 +31,7 @@
    <property name="geometry">
     <rect>
      <x>110</x>
-     <y>290</y>
+     <y>340</y>
      <width>141</width>
      <height>41</height>
     </rect>
@@ -408,6 +402,57 @@ background-color: transparent;</string>
      <width>32</width>
      <height>32</height>
     </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string>Должность:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string>Автосервис:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="car_services">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>300</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	background-color: transparent;
+	border: 2px solid #aa55ff;
+}
+QListView {
+	background-color: rgb(170, 85, 255);
+};</string>
    </property>
   </widget>
  </widget>

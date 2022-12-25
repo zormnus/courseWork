@@ -21,7 +21,7 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>501</width>
+     <width>371</width>
      <height>21</height>
     </rect>
    </property>
@@ -76,9 +76,9 @@
   <widget class="QLabel" name="pos_msg">
    <property name="geometry">
     <rect>
-     <x>540</x>
+     <x>430</x>
      <y>10</y>
-     <width>401</width>
+     <width>281</width>
      <height>21</height>
     </rect>
    </property>

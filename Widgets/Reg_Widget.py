@@ -13,14 +13,13 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.setEnabled(True)
-        Form.resize(366, 359)
+        Form.resize(366, 392)
         Form.setMinimumSize(QtCore.QSize(366, 359))
-        Form.setMaximumSize(QtCore.QSize(366, 359))
         Form.setStyleSheet("QWidget {\n"
 "    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(90, 67, 134, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "}")
         self.regBtn = QtWidgets.QPushButton(Form)
-        self.regBtn.setGeometry(QtCore.QRect(110, 290, 141, 41))
+        self.regBtn.setGeometry(QtCore.QRect(110, 340, 141, 41))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -231,6 +230,24 @@ class Ui_Form(object):
         self.passwordIsVisible.setIcon(icon)
         self.passwordIsVisible.setIconSize(QtCore.QSize(32, 32))
         self.passwordIsVisible.setObjectName("passwordIsVisible")
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(10, 250, 71, 21))
+        self.label.setStyleSheet("background-color: transparent;")
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setGeometry(QtCore.QRect(10, 300, 71, 21))
+        self.label_2.setStyleSheet("background-color: transparent;")
+        self.label_2.setObjectName("label_2")
+        self.car_services = QtWidgets.QComboBox(Form)
+        self.car_services.setGeometry(QtCore.QRect(100, 300, 161, 22))
+        self.car_services.setStyleSheet("QComboBox {\n"
+"    background-color: transparent;\n"
+"    border: 2px solid #aa55ff;\n"
+"}\n"
+"QListView {\n"
+"    background-color: rgb(170, 85, 255);\n"
+"};")
+        self.car_services.setObjectName("car_services")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -239,6 +256,8 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Регистрация"))
         self.regBtn.setText(_translate("Form", "Зарегистрироваться"))
+        self.label.setText(_translate("Form", "Должность:"))
+        self.label_2.setText(_translate("Form", "Автосервис:"))
 
 
 if __name__ == "__main__":

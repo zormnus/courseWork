@@ -20,7 +20,7 @@ class Ui_Form(object):
         self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label.setObjectName("label")
         self.updateBtn = QtWidgets.QPushButton(Form)
-        self.updateBtn.setGeometry(QtCore.QRect(250, 289, 111, 31))
+        self.updateBtn.setGeometry(QtCore.QRect(200, 290, 111, 31))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -36,6 +36,7 @@ class Ui_Form(object):
 "    border: 1px solid #333333;\n"
 "    background-color: #aa55ff;\n"
 "}")
+        self.updateBtn.setText("")
         self.updateBtn.setObjectName("updateBtn")
         self.tableWidget = QtWidgets.QTableWidget(Form)
         self.tableWidget.setGeometry(QtCore.QRect(10, 50, 571, 231))
@@ -50,6 +51,20 @@ class Ui_Form(object):
         self.tableWidget.verticalHeader().setDefaultSectionSize(50)
         self.tableWidget.verticalHeader().setMinimumSectionSize(50)
         self.tableWidget.verticalHeader().setStretchLastSection(True)
+        self.addTaskBtn = QtWidgets.QPushButton(Form)
+        self.addTaskBtn.setGeometry(QtCore.QRect(350, 290, 61, 31))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Maximum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.addTaskBtn.sizePolicy().hasHeightForWidth())
+        self.addTaskBtn.setSizePolicy(sizePolicy)
+        self.addTaskBtn.setStyleSheet("background-color: rgb(0, 255, 0);")
+        self.addTaskBtn.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(".\\../sources/add_icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.addTaskBtn.setIcon(icon)
+        self.addTaskBtn.setIconSize(QtCore.QSize(24, 24))
+        self.addTaskBtn.setObjectName("addTaskBtn")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -58,7 +73,6 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label.setText(_translate("Form", "Ваши задачи"))
-        self.updateBtn.setText(_translate("Form", "Обновить"))
 
 
 if __name__ == "__main__":
